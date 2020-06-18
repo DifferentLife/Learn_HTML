@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .first {
+            border: 10px inset black;
+            width: 450px;
+            height: 150px;
+            padding: 25px 50px;
+            background-color: chartreuse;
+            outline: 15px outset chocolate;
+            margin: auto;
+        }
+
+        .thrid {
+            color: cornflowerblue;
+            background-color: crimson;
+            margin: 20px 150px;
+            border: 1px solid black;
+        }
+    </style>
+<body>
+
+    <div class="center first">
+        <h2 class="thrid">login</h2>
+        <!-- <h4 class="second">Username</h4>
+        <h4 class="second">Password</h4> -->
+        <form action="/action_page.php" id="form1">
+            <label for="fname">Username:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+          </form>
+          <label for="lname">Password:</label>
+          <input type="password" id="lname" name="lname" form="form1">
+    </div>
+</body>
+</head>
