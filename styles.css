@@ -70,7 +70,7 @@ body {
     flex-direction: row-reverse;
     /* flex-wrap: wrap;
     เว้นบรรนทัด */
-    justify-content: space-evenly;
+    justify-content: flex-start;
     /* จัดcenterในแนวนอน */
     align-items: center;
     /* จัดcenterในแนวตั้ง */
