@@ -77,6 +77,7 @@ body {
     /* width: 500px; */
     align-content: space-between;
     background-color: DodgerBlue;
+    /* align-self: กำหนดในแต่ละตัว */
 }
 
 .flexbox>div {
