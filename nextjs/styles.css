@@ -20,3 +20,32 @@
   background-color: #80ffdb;
   margin-left: 21px;
 }
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: dodgerblue
+}
+.flexbox-container>div {
+  width: 100px;
+  margin: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  background-color: yellow;
+  border: 6px outset red;
+  border-width: 5px 20px;
+}
+.login-container {
+  width: 450px;
+  height: 150px;
+  margin: auto;
+  background-color: chartreuse;
+  border: 10px solid black;
+  outline: 15px inset chocolate;
+}
+.login-container>h2 {
+  border: 1px solid black;
+  margin: 15px 150px;
+  background-color: crimson;
+  color: cornflowerblue;
+}
