@@ -28,7 +28,9 @@ export default () => {
         <div>
           <a href="https://www.facebook.com/teerapol.yingsua/" target="blank">Facebook</a>
         </div>
-        <div>3</div>
+        <div>
+          <a href='like'>Like</a>
+        </div>
       </footer>
 
     </div>
