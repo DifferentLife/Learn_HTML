@@ -8,6 +8,10 @@ export default () => {
         <title>For You!!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <head className='center flexbox-container'>
+        <div>1</div>
+        <div>2</div>
+      </head>
       <h1 className='title'>Hello</h1>
       <h1 className='title title1'>World</h1>
       <div className='center'>
