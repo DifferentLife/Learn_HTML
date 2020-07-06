@@ -44,8 +44,9 @@ body {
 .flexbox-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  background-color: dodgerblue
+  justify-content: flex-start;
+  background-color: dodgerblue;
+  margin-bottom: 5px;
 }
 .flexbox-container>div {
   width: 100px;
@@ -63,6 +64,7 @@ body {
   background-color: chartreuse;
   border: 10px solid black;
   outline: 15px inset chocolate;
+  margin-top: 20px;
 }
 .login-container>h2 {
   border: 1px solid black;

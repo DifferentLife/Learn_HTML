@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../components/Header'
 
 const Foo = () => {
     console.log("Hey You!!");
@@ -8,6 +9,8 @@ const Foo = () => {
                 <title>Login</title>
                 <link rel='icon' href='favicon.ico' />
             </Head>
+
+            <Header />
             <div className='center login-container'>
                 <h2>Login</h2>
                 <form>
