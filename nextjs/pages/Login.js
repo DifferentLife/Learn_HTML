@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 const Foo = () => {
     console.log("Hey You!!");
@@ -10,16 +10,17 @@ const Foo = () => {
                 <link rel='icon' href='favicon.ico' />
             </Head>
 
-            <Header />
-            <div className='center login-container'>
-                <h2>Login</h2>
-                <form>
-                    <label for="fname">Username:</label>
-                    <input type="text" id="fname" name="fname" /><br /><br />
-                </form>
-                <label for="lname" />Password:
-                <input type="password" id="lname" name="lanme" />
-            </div>
+            <Layout>
+                <div className='center login-container'>
+                    <h2>Login</h2>
+                    <form>
+                        <label for="fname">Username:</label>
+                        <input type="text" id="fname" name="fname" /><br /><br />
+                    </form>
+                    <label for="lname" />Password:
+                    <input type="password" id="lname" name="lanme" />
+                </div>
+            </Layout>
         </div>
     )
 }

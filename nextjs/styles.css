@@ -46,16 +46,37 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   background-color: dodgerblue;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 .flexbox-container>div {
   width: 100px;
   margin: 10px;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 25px; /*การทำให้ text จัดอยู่ center ในแนวตั้ง */
   background-color: yellow;
   border: 6px outset red;
   border-width: 5px 20px;
+  cursor: pointer;
+}
+.flexbox-container>div>a {
+  text-decoration: none;
+}
+.flexbox-login {
+  display: flex;;
+  background-color: #80ffdb;
+  margin-left: auto;
+}
+.flexbox-login>div {
+  width: 80px;
+  font-size: 1.3rem;
+  border: 6px inset indianred;
+  border-width: 5px 15px;
+  border-radius: 12px;
+  line-height: 25px;
+  margin: 8px;
+}
+.flexbox-login>div>a {
+  text-decoration: none;
 }
 .login-container {
   width: 450px;
@@ -71,4 +92,12 @@ body {
   margin: 15px 150px;
   background-color: crimson;
   color: cornflowerblue;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: darkorange;
 }

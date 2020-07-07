@@ -1,13 +1,16 @@
 import Head from 'next/head'
-import Header from '../components/Header'
+import Layout from '../components/Layout'
 
 const Index = () => (
   <div>
     <Head>
-      <title>My Webapplication</title>
+      <title>Web application</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Header />
+    <Layout>
+      <h1 className='title'>Hello</h1>
+      <h1 className='title title1'>World</h1>
+    </Layout>
   </div>
 )
 
