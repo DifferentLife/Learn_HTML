@@ -49,7 +49,7 @@ body {
   margin-bottom: 30px;
 }
 .flexbox-container>div {
-  width: 100px;
+  width: 150px;
   margin: 10px;
   font-size: 20px;
   line-height: 25px; /*การทำให้ text จัดอยู่ center ในแนวตั้ง */
@@ -80,7 +80,7 @@ body {
 }
 .login-container {
   width: 450px;
-  height: 150px;
+  height: 200px;
   margin: auto;
   background-color: chartreuse;
   border: 10px solid black;
