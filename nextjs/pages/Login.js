@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import {Breadcrumb} from 'antd'
 
 const Foo = () => {
     console.log("Hey You!!");
@@ -11,6 +12,10 @@ const Foo = () => {
             </Head>
 
             <Layout>
+                <Breadcrumb className='breadcrumb'>
+                    <Breadcrumb.Item>Home</Breadcrumb.Item>
+                    <Breadcrumb.Item>login</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='center login-container'>
                     <h2>Login</h2>
                     <form>

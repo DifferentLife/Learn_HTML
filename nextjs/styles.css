@@ -99,10 +99,11 @@ body {
   left: 0;
   bottom: 0;
   padding: 1rem;
-  background-color: darkorange;
+  /* background: darkorange; */
 }
 
 .site-layout-content {
+  min-width: 200px;
   background: #fff;
   padding: 24px;
   min-height: 280px;
@@ -117,4 +118,26 @@ body {
 
 .color {
   background-color: #80ffdb;
+}
+.breadcrumb {
+  margin: 16px 0;
+  padding: 0 50px;
+}
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 135px;
+  line-height: 135px;
+  background: #80ffdb;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h1 {
+  color: #fff;
+  font-family: cursive;
+  font-size: 45px;
+}
+.ant-card {
+   
+   width: 180px;
+
 }

@@ -1,7 +1,7 @@
 import Header from './Header'
 import Footer from './Footer'
 
-const Layout = (props) => (
+const Layouts = (props) => (
     <div>
         <Header />
         {props.children}
@@ -9,4 +9,4 @@ const Layout = (props) => (
     </div>
 )
 
-export default Layout
+export default Layouts

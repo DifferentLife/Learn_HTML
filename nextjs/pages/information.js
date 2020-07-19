@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import { Breadcrumb } from 'antd'
 
 const Information = () => {
     return (
@@ -10,6 +11,10 @@ const Information = () => {
             </Head>
 
             <Layout>
+                <Breadcrumb className='breadcrumb'>
+                    <Breadcrumb.Item>Home</Breadcrumb.Item>
+                    <Breadcrumb.Item>information</Breadcrumb.Item>
+                </Breadcrumb>
                 <div className='center'>
                     <p id='first'>Differentlife</p>
                     <p id='first'>Web Application</p>

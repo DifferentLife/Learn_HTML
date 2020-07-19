@@ -1,9 +1,12 @@
 // import Link from 'next/link'
+import {Layout} from 'antd'
 
-const Footer = () => (
+const {Footer} = Layout
+const Footers = () => (
     <div className='center footer'>
-        This is my first web-aplication.
+        
+        <Footer>This is my first web-aplication.</Footer>
     </div>
 )
 
-export default Footer
+export default Footers
