@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Layouts from '../components/Layout'
 import { Layout, Breadcrumb, Carousel, Card, Row, Col } from 'antd'
 import { FacebookFilled, InstagramFilled, TwitterSquareFilled } from '@ant-design/icons';
+// import Jame from './jame'
+// import db from '../fire'
 
 const { Content } = Layout
 const { Meta } = Card
@@ -12,8 +14,6 @@ const Index = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Layouts>
-      {/* <h1 className='title'>Hello</h1>
-      <h1 className='title title1'>World</h1> */}
       <Carousel autoplay>
         <div>
           <h1>Hello Teacher & Myfriend</h1>
@@ -68,6 +68,7 @@ const Index = () => (
 
         </div>
       </Content>
+      {/* <Jame /> */}
     </Layouts>
   </div>
 )
