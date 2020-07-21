@@ -1,5 +1,6 @@
 import db from '../fire'
 import { useState, useEffect } from 'react'
+import { Form, Input, Button, Card } from 'antd'
 
 
 const Comment = () => {
@@ -43,20 +44,37 @@ const Comment = () => {
         get()
     }, [])
     const renderComment = () => {
-        return commit.map((i, index) => (
-            <li index={i.id}>
+        return commit.map((i) => (
+            <li key={i.id}>
                 {i.comment}
-                <button onClick={() => deleteComment(i.id)}>Delete</button>
+                {' '}
+                <Button type="primary" danger onClick={() => deleteComment(i.id)}>Delete</Button>
             </li>
         ))
+    }
+    const layout = {
+        labelCol: { span: 2.5 },
+        wrapperCol: { span: 5 },
+    };
+    const onFinish = values => {
+        console.log(values)
     }
 
     return (
         <div>
-            <h2 >Comment!!</h2>
-            <ul>{renderComment()}</ul>
-            <input value={comment} onChange={(j) => setComment(j.target.value)} />
-            <button onClick={() => add(comment)}>Sent</button>
+            <Card className="comment" title="Comment!!" bordered={false} >
+                <ul>{renderComment()}</ul>
+            </Card>
+            <Form {...layout} name="nest-messages" onFinish={onFinish}>
+                <Form.Item name={['user', 'Please comment me']} label="Please comment me" style={{}}>
+                    <Input.TextArea value={comment} onChange={(j) => setComment(j.target.value)} placeholder="comment here" />
+                </Form.Item>
+                <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 2 }}>
+                    <Button type="primary" htmlType="submit" onClick={() => add(comment)}>
+                        Submit
+                    </Button>
+                </Form.Item>
+            </Form>
         </div>
     )
 }

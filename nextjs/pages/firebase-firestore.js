@@ -40,7 +40,7 @@ const Comment = () => {
     }, []) //,[] เป็นการระบุหรือบอกว่าเราจะ monitor ตัวไหน ไม่งั้นมันจะวนลูปอนัน
 
     const renderUser = () => {
-        return users.map((i, key) => <li key={i.id}> {i.first} {i.last} {i.born} </li>)
+        return users.map((i) => <li key={i.id}> {i.first} {i.last} {i.born} </li>)
     }
 
     return (

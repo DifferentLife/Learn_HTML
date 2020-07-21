@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Layouts from '../components/Layout'
 import { Layout, Breadcrumb, Carousel, Card, Row, Col } from 'antd'
 import { FacebookFilled, InstagramFilled, TwitterSquareFilled } from '@ant-design/icons';
-import Comment from './comment'
-// import Jame from './jame'
-// import db from '../fire'
+import Comment from '../components/comment'
 
 const { Content } = Layout
 const { Meta } = Card

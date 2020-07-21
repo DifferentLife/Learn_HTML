@@ -86,6 +86,7 @@ body {
   border: 10px solid black;
   outline: 15px inset chocolate;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 .login-container>h2 {
   border: 1px solid black;
@@ -140,4 +141,9 @@ body {
    
    width: 180px;
 
+}
+.comment {
+  width: 1000px ;
+  margin: 10px;
+  /* border: 1px solid black; */
 }
