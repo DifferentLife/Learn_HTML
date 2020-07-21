@@ -2,7 +2,7 @@ body {
   background: #ffff3f ;
 }
 .title {
-  display: inline;
+  display: inline-block;
   color: black;
   background-color: deepskyblue;
   border-style: dotted dashed solid double;

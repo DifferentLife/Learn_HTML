@@ -3,7 +3,7 @@ import {Layout} from 'antd'
 
 const {Footer} = Layout
 const Footers = () => (
-    <div className='center footer'>
+    <div className='center'>
         
         <Footer>This is my first web-aplication.</Footer>
     </div>
